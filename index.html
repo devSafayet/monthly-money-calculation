@@ -32,33 +32,40 @@
             <!-- income text area  -->
            <div>
                <p> <span class="pe-2">Income:</span>
-               <input class="rounded py-1" type="text">
+               <input id="tota-income" class="rounded py-1" type="text">
             </p>
            </div>
            <!-- Expenses-text-area  -->
            <h4 class="pb-2">Expenses</h4>
 
            <div>
-               <p><span class="pe-3 ps-1">Food:</span> <input class="rounded py-1" type="text"></p>
-               <p> <span class="pe-3 ps-1">Rent:</span> <input class="rounded py-1" type="text"></p>
-               <p><span class="pe-1">Clothes:</span> <input class="rounded py-1" type="text"></p>
+               <p><span class="pe-3 ps-1">Food:</span> <input id="food-cost" class="rounded py-1" type="text"></p>
+
+               <p> <span class="pe-3 ps-1">Rent:</span> <input id="rent-cost" class="rounded py-1" type="text"></p>
+
+               <p><span class="pe-1">Clothes:</span> <input id="clothes-cost" class="rounded py-1" type="text"></p>
            </div>
            <!-- Calculate-button-area  -->
-           <button class="rounded py-2 px-5 mb-3 bg-primary">
+           <button id="calculate-btn" class="rounded py-2 px-5 mb-3 bg-primary">
                Calculate
            </button>
            <!-- total-Expenses-area -->
            <div class="py-2">
-            <h5>Total Expenses: <span>00</span></h5>
+            <h5>Total Expenses: <span id="total-expenses">00</span></h5>
         </div>
         <!-- Balance-area  -->
         <div class="pb-2"> 
-            <h5>Balance: <span>00</span></h5>
+            <h5>Balance: <span id="minus-balance">00</span></h5>
         </div>
         <!-- Saving area  -->
-        <div class="py-2">
-            <span>Save: </span> <input class="rounded py-1 px-0" type="text"> % <button class="rounded py-2 px-5 bg-primary">Save</button>
-        </div>
+    
+        <form class="py-2">
+            <label id="">Save: </label>
+            <input class="rounded py-1 px-0" type="text">
+            % 
+            <button class="rounded py-2 px-5 bg-primary">Save</button>
+        </form>
+        
         <!-- Saving-ammount-area  -->
         <div class="pb-1">
             <h5>Saving Ammount: <span>00</span></h5>
@@ -71,6 +78,9 @@
         </section>
         </div>
     </main>
-
+    <!----------------------------------------------------
+                     Js Style link Sheet
+    ------------------------------------------------------ -->
+    <script src="js/script.js"></script>
 </body>
 </html>

@@ -16,6 +16,7 @@
     <header class="text-center py-5 text-primary">
         <h1>Monthly Money Calculation</h1>
     </header>
+    
     <!-- Main Area Start  -->
     <main class="container mb-3">
         <div class="row">
@@ -32,18 +33,18 @@
             <!-- income text area  -->
            <div>
                <p> <span class="pe-2">Income:</span>
-               <input id="tota-income" class="rounded py-1" type="text">
+               <input id="tota-income" class="rounded py-1" type="number">
             </p>
            </div>
            <!-- Expenses-text-area  -->
            <h4 class="pb-2">Expenses</h4>
 
            <div>
-               <p><span class="pe-3 ps-1">Food:</span> <input id="food-cost" class="rounded py-1" type="text"></p>
+               <p><span class="pe-3 ps-1">Food:</span> <input id="food-cost" class="rounded py-1" type="number"></p>
 
-               <p> <span class="pe-3 ps-1">Rent:</span> <input id="rent-cost" class="rounded py-1" type="text"></p>
+               <p> <span class="pe-3 ps-1">Rent:</span> <input id="rent-cost" class="rounded py-1" type="number"></p>
 
-               <p><span class="pe-1">Clothes:</span> <input id="clothes-cost" class="rounded py-1" type="text"></p>
+               <p><span class="pe-1">Clothes:</span> <input id="clothes-cost" class="rounded py-1" type="number"></p>
            </div>
            <!-- Calculate-button-area  -->
            <button id="calculate-btn" class="rounded py-2 px-5 mb-3 bg-primary">
@@ -59,20 +60,20 @@
         </div>
         <!-- Saving area  -->
     
-        <form class="py-2">
-            <label id="">Save: </label>
-            <input class="rounded py-1 px-0" type="text">
+        <div class="py-2">
+            <label id>Save: </label>
+            <input id="persent" class="rounded py-1 px-0" type="number">
             % 
-            <button class="rounded py-2 px-5 bg-primary">Save</button>
-        </form>
+            <button id="saving-button" class="rounded py-2 px-5 bg-primary">Save</button>
+        </div>
         
         <!-- Saving-ammount-area  -->
         <div class="pb-1">
-            <h5>Saving Ammount: <span>00</span></h5>
+            <h5>Saving Ammount: <span id="saving-ammount">00</span></h5>
         </div>
         <!-- Remaining-balance-area  -->
         <div class="mb-3">
-            <h5>Remaining Balance: <span>00</span></h5>
+            <h5>Remaining Balance: <span id="maining-balance">00</span></h5>
         </div>
 
         </section>
